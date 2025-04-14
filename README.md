@@ -59,15 +59,17 @@ The following parts are mainly used for IDE support, the actual functionality is
 $env:CUDA_PATH = "path/to/cuda"  # Windows
 ```
 
-Build C++ library (if you want to use the c++ library):
+2. Create & activate python venv and install requirements
+
+3.Build Python extension:
 ```powershell
-.\buildscripts\cppbuild.ps1  # Windows
+.\buildscripts\win\pybuild.ps1
+```
+```bash
+./buildscripts/linux/pybuild.sh
 ```
 
-Build Python extension (if you want to use the python API):
-```powershell
-.\buildscripts\pybuild.ps1   # Windows
-```
+Note: On linux systems you might additionally need to install the python3-dev package.
 
 ## Usage Example
 
