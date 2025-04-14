@@ -26,7 +26,7 @@ The framework's core consists of a Tensor library written in pure cuda c++ that 
     - `cudaMem.cuh/cu`: Memory management utils
     - `cudaDif.cuh/cu`: Automatic differentiation
     - `util.cuh/cu`: Error handling and other utils
-- `optimization/`: CUDA kernel implementations
+- `optimization/`: Gradient descent based optimizers
     - `MomentumWrapper.cuh/cu`: Momentum Optimizer
     - `RMSPropWrapper.cuh/cu`: RMSProp Optimizer
     - `AdamWrapper.cuh/cu`: Adam Optimizer
